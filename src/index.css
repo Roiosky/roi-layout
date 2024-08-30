@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #380137, #2c3159, #27496a, #225d78, #1f6981, #1d7388, #178b99, #0cb7b8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header, .footer {
+  background: rgba(240, 240, 240, 0.8);
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+.imgAside {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover; 
+  display: block;
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.aside {
+  width: 25%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 0px 5px 0px 15px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 0px 15px 0px 5px;
+}
+
+/* Estilos para la galería */
+.slider {
+  display: flex;
+  overflow-x: hidden; /* Cambiado de auto a hidden */
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: calc(100% / 3 - 20px); /* Ajustar para mostrar 3 cards */
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Otros estilos del contenedor */
+.gallery {
+  margin-top: 20px;
+  padding: 10px;
+
+  border-radius: 8px;
+}
+
+
+.footer {
+  background: rgba(204, 204, 204, 0.8);
+}
